@@ -1,8 +1,9 @@
 import "./ExpenseItem.css";
+import Card from "./Card";
 
 const ExpenseItem = ({ date, name, price }) => {
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       <div className="expense-item__date-description expense-item__sub_item" >
         <img
           alt="Icon calendar"
@@ -17,7 +18,7 @@ const ExpenseItem = ({ date, name, price }) => {
       </div>
 
       <div className="expense-item__description__price expense-item__sub_item">${price}</div>
-    </div>
+    </Card>
   );
 };
 
