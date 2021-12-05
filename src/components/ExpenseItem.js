@@ -1,28 +1,22 @@
 import "./ExpenseItem.css";
 
-const ExpenseItem = (props) => {
-
-
+const ExpenseItem = ({ date, name, price }) => {
   return (
     <div className="expense-item">
-      <div className="expense-item__date-description">
+      <div className="expense-item__date-description expense-item__sub_item" >
         <img
           alt="Icon calendar"
           className="expense-item__date-description__icon"
           src={`${process.env.PUBLIC_URL}/icons/date.png`}
         />
-        <div className="expense-item__date-description__date">
-          {props.sampleDate.date}
-        </div>
+        <div className="expense-item__date-description__date">{date}</div>
       </div>
 
-      <div className="expense-item__description">
-        <h2 className="expense-item__description__name">{props.sampleDate.name}</h2>
+      <div className="expense-item__description expense-item__sub_item">
+        <h2 className="expense-item__description__name">{name}</h2>
       </div>
 
-      <div className="expense-item__description__price">
-        ${props.sampleDate.price}
-      </div>
+      <div className="expense-item__description__price expense-item__sub_item">${price}</div>
     </div>
   );
 };

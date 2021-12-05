@@ -10,12 +10,14 @@
     align-content: center;
     align-items: center;
     padding: 0.5vw;
-    overflow: hidden;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .expense-item__date-description{
     display: flex;
     flex-direction: row;
+    width: 10vw;
 }
 
 .expense-item__date-description__date{
@@ -27,8 +29,8 @@
 }
 
 .expense-item__description{
-    display: flex;
-    flex-direction: row;
+    width: 65vw;
+    text-align: center;
 }
 
 .expense-item__date-description__icon{
@@ -38,10 +40,11 @@
 
 .expense-item__description__name{
     font-family: Roboto;
-    align-content: center;
 }
 
 .expense-item__description__price{
+    overflow: hidden;
+    width: 100px;
     background-color: #3479f3;
     padding-right: 20px;
     padding-left: 20px;
@@ -50,4 +53,45 @@
     border: 1px solid #3869e4;
     border-radius: 5px;
     color: white;
+}
+
+.expense-item__sub_item{
+}
+
+@media only screen and (max-width: 500px) {
+    .expense-item{
+        background-color: white;
+        height: 150px;
+        width: 100vw;
+        border: 1px black solid;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        padding: 0.5vw;
+        margin-bottom: 10px;
+    }
+
+    .expense-item__description__price{
+        overflow: hidden;
+        width: 100px;
+        background-color: #3479f3;
+        text-align: center;
+        border: 1px solid #3869e4;
+        border-radius: 5px;
+        color: white;
+    }
+    
+    .expense-item__date-description__date{
+        color: black;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 15px;
+    }
+
+    .expense-item__date-description__icon{
+        height: 20px;
+        margin-left: -20px;
+    }
 }
