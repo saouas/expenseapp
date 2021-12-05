@@ -1,0 +1,53 @@
+.expense-item{
+    background-color: white;
+    height: 100px;
+    width: 100vw;
+    border: 1px black solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0.5vw;
+    overflow: hidden;
+}
+
+.expense-item__date-description{
+    display: flex;
+    flex-direction: row;
+}
+
+.expense-item__date-description__date{
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.expense-item__description{
+    display: flex;
+    flex-direction: row;
+}
+
+.expense-item__date-description__icon{
+    height: 20px;
+    margin-top: -2px;
+}
+
+.expense-item__description__name{
+    font-family: Roboto;
+    align-content: center;
+}
+
+.expense-item__description__price{
+    background-color: #3479f3;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #3869e4;
+    border-radius: 5px;
+    color: white;
+}
