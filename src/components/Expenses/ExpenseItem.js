@@ -1,10 +1,10 @@
 import "./ExpenseItem.css";
-import Card from "./Card";
+import Card from "./../UI/Card";
 
-const ExpenseItem = ({ date, name, price }) => {
+const ExpenseItem = ({ date, title, price }) => {
   return (
     <Card className="expense-item">
-      <div className="expense-item__date-description expense-item__sub_item" >
+      <div className="expense-item__date-description expense-item__sub_item">
         <img
           alt="Icon calendar"
           className="expense-item__date-description__icon"
@@ -14,10 +14,12 @@ const ExpenseItem = ({ date, name, price }) => {
       </div>
 
       <div className="expense-item__description expense-item__sub_item">
-        <h2 className="expense-item__description__name">{name}</h2>
+        <h2 className="expense-item__description__name">{title}</h2>
       </div>
 
-      <div className="expense-item__description__price expense-item__sub_item">${price}</div>
+      <div className="expense-item__description__price expense-item__sub_item">
+        ${price}
+      </div>
     </Card>
   );
 };
