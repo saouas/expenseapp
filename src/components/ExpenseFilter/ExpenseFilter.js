@@ -9,6 +9,9 @@ const ExpenseFilter = (props) => {
   const [yearDate, setYearDate] = useState(new Date().getFullYear());
   const [data, setData] = useState(props.data || []);
 
+  useEffect(() =>{
+
+  },[props.data])
 
   const handleNewYearDate = (date) => {
     setYearDate(date);
