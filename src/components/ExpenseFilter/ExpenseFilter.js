@@ -10,7 +10,7 @@ const ExpenseFilter = (props) => {
   const [data, setData] = useState(props.data || []);
 
   useEffect(() =>{
-
+    setData(props.data);
   },[props.data])
 
   const handleNewYearDate = (date) => {
