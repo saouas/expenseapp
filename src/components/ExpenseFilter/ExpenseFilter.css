@@ -1,0 +1,39 @@
+.expense-filter{
+    display: flex;
+    flex-direction: column;    
+}
+
+.expense-filter__container-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding-right: 2%;
+    padding-left: 2%;
+    width:100%;
+}
+
+.expense-filter__container-filter__text{
+    color: white;
+}
+
+.expense-filter__container-filter__dropdown{
+    width: 80px;
+    height: 30px;
+}
+
+.expense-filter__container__bars{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 500px) {
+    .expense-filter__container-filter__text{
+        color: black;
+        font-size: 13px;
+    }
+}

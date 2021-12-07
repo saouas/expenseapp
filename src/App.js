@@ -2,6 +2,7 @@ import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import Card from "./components/UI/Card";
 import { useState, useEffect } from "react";
+import ExpenseFilter from "./components/ExpenseFilter/ExpenseFilter";
 
 function App() {
   const sampleData = [
@@ -21,7 +22,7 @@ function App() {
       price: "50.65",
     },
     {
-      date: "2021-12-02",
+      date: "2021-11-02",
       title: "Gasoil",
       price: "70",
     },
@@ -43,6 +44,7 @@ function App() {
       <h2>ExpenseApp</h2>
       <Card className="app-container">
         <NewExpense onAddExpense={createNewExpenseHandler} />
+        <ExpenseFilter data={data}/>
         <Expenses data={data} />
       </Card>
     </div>
