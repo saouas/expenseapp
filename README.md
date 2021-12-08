@@ -27,7 +27,7 @@ To create a static instance of this project, run the following task:
 
 * `npm run build`
 
-This will create a folder called `www`, into which the required files will be created.
+This will create a folder called `build`, into which the required files will be created.
 
 
 ## Repo structure
