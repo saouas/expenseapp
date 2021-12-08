@@ -11,9 +11,10 @@ The app was written in React.js,HTML and pure CSS. The application is full respo
 To get the project up and running, and view components in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Install project dependancies: `npm install`
-3. Start the development environment: `npm start`
-4. Open your browser and visit <http://localhost:3000>
+2. Clone the project
+3. Install project dependancies: `npm install`
+4. Start the development environment: `npm start`
+5. Open your browser and visit <http://localhost:3000>
 
 Feel free to edit content in file `sampleData.js` if you want to play with the App :)
 
