@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import ExpenseFilter from "./components/ExpenseFilter/ExpenseFilter";
 
 function App() {
+  //date format: yyyy-mm-dd
   const sampleData = [
     {
       date: "2021-12-05",

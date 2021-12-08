@@ -1,7 +1,7 @@
 import ExpenseBar from './ExpenseBar';
 import './ExpensesBar.css'
 import {useState, useEffect} from 'react';
-import { MonthShortcut, MonthShortcutReverse } from "../../utils/date";
+import { MonthShortcut } from "../../utils/date";
 import { getKeyByValue } from "../../utils/functions";
 
 const ExpensesBar = (props) => {
@@ -22,7 +22,7 @@ const ExpensesBar = (props) => {
               let find = tmp_date.match(monthRegex);
               // eslint-disable-next-line array-callback-return
               if (!find) return;
-              if (find[3] === actualMonthCode) {
+              if (find[2] === actualMonthCode) {
                 acc = parseInt(el.price) + acc;
               }
             });
