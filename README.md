@@ -4,16 +4,17 @@
 This app was created to only demonstrate my frontend skills. The app is a complete demo (there is no backend or database to store the expenses).
 The app was written in React.js,HTML and pure CSS. The application is full responsive and have a pretty good UI.
 
-![ExpenseApp screenshot](https://raw.github.com/saouas/project-00/master/screenshot.png)
+![ExpenseApp screenshot](https://github.com/saouas/project00/blob/master/screenshot.png)
 
 
 ## Installation
 To get the project up and running, and view components in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Install project dependancies: `npm install`
-3. Start the development environment: `npm start`
-4. Open your browser and visit <http://localhost:3000>
+2. Clone the project
+3. Install project dependancies: `npm install`
+4. Start the development environment: `npm start`
+5. Open your browser and visit <http://localhost:3000>
 
 Feel free to edit content in file `sampleData.js` if you want to play with the App :)
 
@@ -27,7 +28,7 @@ To create a static instance of this project, run the following task:
 
 * `npm run build`
 
-This will create a folder called `www`, into which the required files will be created.
+This will create a folder called `build`, into which the required files will be created.
 
 
 ## Repo structure
