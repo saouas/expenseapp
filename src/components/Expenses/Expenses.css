@@ -2,9 +2,17 @@
     padding:5vw
 }
 
+.no_expense_message{
+    color: white;
+}
+
 
 @media only screen and (max-width: 500px) {
     .expenses__container{
         background-color: white;
+    }
+    .no_expense_message{
+        color: black;
+        font-weight: bold;
     }
 }
