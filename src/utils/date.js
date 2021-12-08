@@ -27,4 +27,12 @@ const MonthShortcutReverse = [
     {"11": "Nov"},
     {"12": "Dec"},
   ];
-export { MonthShortcut, MonthShortcutReverse };
+
+const getYear = (date) =>{
+  let monthRegex = new RegExp(`([0-9]{4})-([0-9]{2})-([0-9]{2})`);
+  let find = date.match(monthRegex);
+  if(!find) return null;
+  return find[1];
+}
+
+export { MonthShortcut, MonthShortcutReverse, getYear };

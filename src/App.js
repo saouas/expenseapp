@@ -29,12 +29,17 @@ function App() {
   ];
 
   const [data, setData] = useState(sampleData);
+  const [year, setYear] = useState(new Date().getFullYear())
+  
+  const handleNewYearValue = (newYear) => {
+    setYear(newYear);
+  }
   const createNewExpenseHandler = (expense) => {
     setData((prevState) => {
-      let newData = [...prevState];
-      newData.push(expense);
-      return newData;
+      return [expense, ...prevState]
     });
+
+
   };
 
   useEffect(() => {}, [data]);
@@ -44,8 +49,8 @@ function App() {
       <h2>ExpenseApp</h2>
       <Card className="app-container">
         <NewExpense onAddExpense={createNewExpenseHandler} />
-        <ExpenseFilter data={data}/>
-        <Expenses data={data} />
+        <ExpenseFilter data={data} onChangeYearValue={handleNewYearValue}/>
+        <Expenses data={data} year={year}/>
       </Card>
     </div>
   );

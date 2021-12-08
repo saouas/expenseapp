@@ -9,14 +9,14 @@ const ExpenseFilter = (props) => {
   const [yearDate, setYearDate] = useState(new Date().getFullYear());
   const [data, setData] = useState(props.data || []);
 
-  useEffect(() =>{
+  useEffect(() => {
     setData(props.data);
-  },[props.data])
+  }, [props.data]);
 
   const handleNewYearDate = (date) => {
     setYearDate(date);
+    props.onChangeYearValue(date);
   };
-
 
   return (
     <Card className="expense-filter">
