@@ -1,0 +1,14 @@
+.awaiting-new-expense-container{
+    background-color: black;
+    height:100px;
+    display: flex;
+    width:100%;
+}
+
+.awaiting-new-expense__button{
+    height: 30px;
+    width: 30px;
+    padding-top:5px;
+    padding-left:5px;
+    cursor: pointer;
+}

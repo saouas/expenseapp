@@ -7,7 +7,7 @@ const NewExpenseForm = (props) => {
     title: "",
     price: "",
     date: "",
-  });
+  })
 
   const handleTitle = (e) => {
     setUserInput((prevState) => {
@@ -24,7 +24,6 @@ const NewExpenseForm = (props) => {
       return { ...prevState, date: e.target.value };
     });
   };
-
   const submitHandler = (event) => {
     event.preventDefault();
     const expenseDate = {
@@ -40,8 +39,16 @@ const NewExpenseForm = (props) => {
       date: "",
     });
   };
+  const handleNewState = () =>{
+    props.onChangeCloseValue();
+  }
   return (
     <Card className="newexpense-container">
+    <img src={`${process.env.PUBLIC_URL}/icons/quit.png`}
+                 alt="adding new expense"
+                 className="open-new-expense__button"
+                 onClick={handleNewState}
+                 />
       <form className="newexpense__form" onSubmit={submitHandler}>
         <div className="newexpense-container__control">
           <label>Title</label>

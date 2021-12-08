@@ -46,9 +46,7 @@ const ExpensesBar = (props) => {
       useEffect(() => {
         if (!props.data) return;
         if (!props.year) return;
-        console.log(props.data);
         const budgetRepartition = calculateBudgetYearRepartition(props.year);
-        console.log(budgetRepartition);
         setExpenseBarsInfo(budgetRepartition);
       // eslint-disable-next-line react-hooks/exhaustive-deps
       }, [props.year, props.data]);
