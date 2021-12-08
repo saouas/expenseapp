@@ -1,7 +1,6 @@
 import "./ExpenseFilter.css";
 import Card from "../UI/Card";
 import Dropdown from "../UI/Dropdown";
-import ExpenseBar from "./ExpenseBar";
 import { useState, useEffect } from "react";
 import ExpensesBar from "./ExpensesBar";
 

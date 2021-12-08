@@ -1,5 +1,5 @@
 import "./Dropdown.css";
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 const Dropdown = (props) => {
   const classes = `card ${props?.className ? props?.className : ""}`;

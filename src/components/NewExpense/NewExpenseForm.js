@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Card from "../UI/Card";
 import "./NewExpenseForm.css";
 
