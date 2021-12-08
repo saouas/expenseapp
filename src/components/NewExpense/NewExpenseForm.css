@@ -32,6 +32,7 @@
 
 .newexpense-container__control{
     display: flex;
+    align-items: center;
 }
 
 .newexpense-container__button{
