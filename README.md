@@ -4,7 +4,7 @@
 This app was created to only demonstrate my frontend skills. The app is a complete demo (there is no backend or database to store the expenses).
 The app was written in React.js,HTML and pure CSS. The application is full responsive and have a pretty good UI.
 
-![ExpenseApp screenshot](https://raw.github.com/saouas/project-00/master/screenshot.png)
+![ExpenseApp screenshot](https://github.com/saouas/project00/blob/master/screenshot.png)
 
 
 ## Installation
